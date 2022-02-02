@@ -26,8 +26,8 @@ export const FaceMatcherComponent = (props) => {
         const detections = await faceapi
             .detectAllFaces(image)
             .withFaceLandmarks()
-            .withAgeAndGender()
-            .withFaceDescriptors()
+            //.withAgeAndGender()
+            //.withFaceDescriptors()
         
         const resizedDetections = faceapi.resizeResults(detections, displaySize)
         const results = resizedDetections

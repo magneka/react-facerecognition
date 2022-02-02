@@ -22,8 +22,8 @@ function App() {
         faceapi.nets.faceRecognitionNet.loadFromUri('/models'),
         faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
         faceapi.nets.ssdMobilenetv1.loadFromUri('/models'),
-        faceapi.nets.faceExpressionNet.loadFromUri('/models'),
-        faceapi.nets.ageGenderNet.loadFromUri('/models')
+        //faceapi.nets.faceExpressionNet.loadFromUri('/models'),
+        //faceapi.nets.ageGenderNet.loadFromUri('/models')
       ]).then(console.log('FaceApi is loaded..'))
 
       console.log('Start training model with known faces')      
