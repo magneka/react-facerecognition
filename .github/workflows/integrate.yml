@@ -1,7 +1,7 @@
 name: Node Continuous Integration
 
 on: 
-  pull_request:
+  push:
     branches: [ master ]
 
 jobs:
@@ -15,4 +15,3 @@ jobs:
       -run: npm ci
       -run: npm test
       -npm: npm run build
-      
