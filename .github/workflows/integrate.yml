@@ -14,6 +14,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
-      - run: npm ci
-      - run: npm test
-      - npm: npm run build
+      - name: install dependencied (npm install basically)
+        run: npm ci
+      - name: bygg
+        npm: npm run build
