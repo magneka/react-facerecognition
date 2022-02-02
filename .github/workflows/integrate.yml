@@ -24,6 +24,8 @@ jobs:
 #          CI: true
       - name: Generate build
         run: npm run build
+        env:
+          CI: false
       # Share artifact inside workflow
       - name: Share artifact inside workflow
         uses: actions/upload-artifact@v1
